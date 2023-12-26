@@ -3,7 +3,7 @@
  <head> 
   <meta charset="UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <title>Ma Plateforme de Musique</title> 
+  <title>Label Tlv</title> 
  </head> 
  <body> <!-- Section de Connexion --> 
   <section id="connexion"> 
