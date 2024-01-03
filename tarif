@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarification</title>
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers votre fichier CSS -->
+</head>
+<body>
+    <section id="tarification">
+        <h2>Tarification</h2>
+        <p>DÃÂ©couvrez nos offres spÃÂ©ciales pour les albums et les EP :</p>
+
+        <div class="album">
+            <h3>Nom de l'Album 1</h3>
+            <p>Prix : 9.99Ã¢ÂÂ¬</p>
+            <button onclick="acheterAlbum('album1')">Acheter</button>
+        </div>
+
+        <div class="album">
+            <h3>Nom de l'Album 2</h3>
+            <p>Prix : 12.99Ã¢ÂÂ¬</p>
+            <button onclick="acheterAlbum('album2')">Acheter</button>
+        </div>
+
+        <div class="service">
+            <h3>Service de Concert en Ligne</h3>
+            <p>Prix : 19.99Ã¢ÂÂ¬</p>
+            <button onclick="acheterService('concertEnLigne')">Acheter</button>
+        </div>
+
+        <!-- Ajoutez d'autres offres de tarification ici -->
+
+        <div class="promo">
+            <h3>Promotion SpÃÂ©ciale</h3>
+            <p>Prix : 14.99Ã¢ÂÂ¬</p>
+            <button onclick="acheterPromo('promo1')">Acheter</button>
+        </div>
+
+        <!-- Ajoutez d'autres balises pour d'autres offres ou services -->
+    </section>
+
+    <script>
+        function acheterAlbum(nomAlbum) {
+            alert("Vous allez acheter l'album " + nomAlbum);
+        }
+
+        function acheterService(nomService) {
+            alert("Vous allez acheter le service " + nomService);
+        }
+
+        function acheterPromo(nomPromo) {
+            alert("Vous allez acheter la promotion " + nomPromo);
+        }
+    </script>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#tarification {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.album, .service, .promo {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
